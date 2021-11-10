@@ -1,4 +1,4 @@
-// import { createStore } from 'redux';
+import { createStore } from 'redux';
 
 const INCREMENT = 'COUNTER/INCREMENT';
 const DECREMENT = 'COUNTER/DECREMENT';
@@ -22,7 +22,7 @@ const counterReducer = (state = 0, action) => {
   }
 };
 
-// const store = createStore(counterReducer);
+const store = createStore(counterReducer);
 
 // store.dispatch(increment());
 // store.dispatch(increment());
