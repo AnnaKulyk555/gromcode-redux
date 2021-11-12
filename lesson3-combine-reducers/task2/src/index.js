@@ -1,10 +1,9 @@
-import { store, increment, decrement, reset } from './counter';
+import { store, increment, decrement } from './counter';
 
 store.dispatch(increment(1));
 store.dispatch(increment(1));
 store.dispatch(increment(1));
 store.dispatch(decrement(1));
-store.dispatch(reset());
 
 store.subscribe(() => {
   console.log(store);
